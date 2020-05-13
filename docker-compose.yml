@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  ubuntu:
+    build: .
+    container_name: ubuntu
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./file:/app
+    tty: true
+    restart: always
