@@ -13,7 +13,7 @@ $ cd youtube_sound
 $ sudo docker-compose up -d --build
 
 # 動画をダウンロード
-$ sudo docker exec ubuntu node youtube/index 動画のID
+$ sudo docker exec ubuntu bash -c "cd youtube && npm i && cd .. &&  node youtube/index 動画のID"
 
 # 音抽出
 $ sudo docker exec ubuntu ffmpeg -i output.mp4 -ab 128 output.mp3
