@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "ytdl-core": "^2.0.0"
+    "ytdl-core": "^2.1.7"
   }
 }
